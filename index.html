@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Prontuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hospital Digital</h1>
+        <p>Sistema de Gestão de Prontuários Eletrônicos</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>📝 Registrar Novo Atendimento</h2>
+            <form id="form-prontuario">
+                <!-- Dados do Paciente -->
+                <div>
+                    <label for="nome">Nome Completo do Paciente:</label>
+                    <input type="text" id="nome" required placeholder="Ex: João Silva">
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" required min="0" max="120">
+                </div>
+
+                <!-- Dados Clínicos -->
+                <div>
+                    <label for="sintomas">Sintomas Apresentados:</label>
+                    <textarea id="sintomas" required placeholder="Descreva os principais sintomas..."></textarea>
+                </div>
+
+                <div>
+                    <label for="diagnostico">Hipótese Diagnóstica:</label>
+                    <input type="text" id="diagnostico" required placeholder="Ex: Suspeita de Dengue">
+                </div>
+
+                <button type="submit">Salvar Prontuário</button>
+            </form>
+        </section>
+
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>
