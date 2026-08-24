@@ -28,3 +28,27 @@ formProntuario.addEventListener('submit', function(event) {
     alert(`Prontuário do paciente ${novoProntuario.nome} enviado para a Área do Médico!`);
     formProntuario.reset();
 });
+
+// Captura o link do médico
+const linkMedico = document.getElementById('link-medico');
+
+// Escuta o clique no link
+linkMedico.addEventListener('click', function(event) {
+    // Impede a mudança de página imediata
+    event.preventDefault();
+
+    // Aqui o JavaScript busca de forma segura a senha configurada no sistema
+    // (Para fins de teste local simples, vamos simular a leitura do .env)
+    const senhaCorreta = "medico123"; 
+
+    // Abre uma caixinha na tela perguntando a senha
+    const senhaDigitada = prompt("Digite a senha de acesso médico:");
+
+    // Verifica se a senha está certa
+    if (senhaDigitada === senhaCorreta) {
+        alert("Acesso liberado!");
+        window.location.href = "med.html"; // Redireciona para a página médica
+    } else {
+        alert("Senha incorreta! Acesso negado.");
+    }
+});
