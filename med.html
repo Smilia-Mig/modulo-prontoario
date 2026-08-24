@@ -11,35 +11,29 @@
         <h1>Hospital Digital</h1>
         <p>Painel Clínico de Atendimento</p>
         <nav>
-            <a href="index.html" style="color: white; font-weight: bold; text-decoration: none;">Voltar ao Início</a>
+            <a href="index.html" class="nav-link">Voltar ao Início</a>
         </nav>
     </header>
 
-    <main style="max-width: 800px;">
+    <main class="container-medico">
         <h2>🩺 Histórico Clínico de Pacientes</h2>
-        <p>Visualize os prontuários registrados e gerencie os históricos médicos.</p>
+        <p>Abaixo estão os prontuários enviados pela recepção em tempo real.</p>
 
-        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <table class="tabela-prontuarios">
             <thead>
-                <tr style="background-color: #007bff; color: white;">
-                    <th style="padding: 10px; text-align: left;">Paciente</th>
-                    <th style="padding: 10px; text-align: left;">Idade</th>
-                    <th style="padding: 10px; text-align: left;">Sintomas / Diagnóstico</th>
-                    <th style="padding: 10px; text-align: center;">Ações</th>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Idade</th>
+                    <th>Sintomas / Diagnóstico</th>
+                    <th class="texto-centralizado">Ações</th>
                 </tr>
             </thead>
             <tbody>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;">João Silva</td>
-                    <td style="padding: 10px;">45</td>
-                    <td style="padding: 10px;">Febre e dor no corpo (Suspeita de Dengue)</td>
-                    <td style="padding: 10px; text-align: center;">
-                        <button style="padding: 5px 10px; background-color: #dc3545; font-size: 12px; width: auto;">Finalizar Caso</button>
-                    </td>
-                </tr>
+                <!-- O JavaScript (medico.js) vai injetar as linhas aqui -->
             </tbody>
         </table>
-        <script src="med.js"></script>
     </main>
+
+    <script src="medico.js"></script>
 </body>
 </html>
