@@ -72,3 +72,54 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+/* Novas regras para a Área do Médico */
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container-medico {
+    max-width: 800px; /* Deixa a página do médico mais larga para a tabela */
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tabela-prontuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-prontuarios th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-prontuarios td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texto-centralizado {
+    text-align: center;
+}
+
+/* Ajuste para o botão de excluir dentro da tabela */
+.tabela-prontuarios button {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    font-size: 12px;
+}
+
+.tabela-prontuarios button:hover {
+    background-color: #bd2130;
+}
